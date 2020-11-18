@@ -14,6 +14,18 @@
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
   </properties>
+  <distributionmanagement>
+    <repository>
+      <id>mvn-nexus</id>
+      <name>dockeransiblejenkins-release</name>
+      <url>http://localhost:9081/repository/dockeransiblejenkins-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>mvn-nexus</id>
+      <name>dockeransiblejenkins-snapshot</name>
+      <url>http://localhost:9081/repository/dockeransiblejenkins-snapshot/</url>
+    </snapshotRepository>
+  </distributionmanagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
